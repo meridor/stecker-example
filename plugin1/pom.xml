@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>ru.meridor.tools</groupId>
+        <artifactId>plugin-engine-example</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <packaging>jar</packaging>
+    <artifactId>plugin1</artifactId>
+    <name>plugin1</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>ru.meridor.tools</groupId>
+            <artifactId>extension-points</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>ru.meridor.tools</groupId>
+                <artifactId>plugin-generator</artifactId>
+                <configuration>
+                    <description>Provides HelloGreeter implementation of Greeter</description>
+                    <!-- Here's how to declare dependencies -->
+                    <!-- 
+                    <depends>
+                        <plugin>
+                            <name>some-plugin</name>
+                            <version>1.1</version>
+                        </plugin>
+                        <plugin>
+                            <name>another-plugin</name>
+                        </plugin>
+                    </depends> 
+                    <conflicts>
+                        <plugin>
+                            <name>one-more-plugin</name>
+                            <version>[1.3,)</version>
+                        </plugin>
+                    </conflicts> 
+                    <provides>some-virtual-dependency-name</provides>
+                    -->
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

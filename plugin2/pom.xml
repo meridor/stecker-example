@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>ru.meridor.tools</groupId>
+        <artifactId>plugin-engine-example</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <packaging>jar</packaging>
+    <artifactId>plugin2</artifactId>
+    <name>plugin2</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>ru.meridor.tools</groupId>
+            <artifactId>extension-points</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>ru.meridor.tools</groupId>
+                <artifactId>plugin-generator</artifactId>
+                <configuration>
+                    <description>Provides HeyGreeter implementation of Greeter</description>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
