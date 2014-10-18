@@ -8,7 +8,7 @@ You need to have:
 * JDK 1.8.+
 * Maven 3.2+
 To compile the example type:
-```java
+```bash
 $ mvn clean package
 ```
 To run it go to **target** directory and type the following command:
