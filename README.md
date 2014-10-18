@@ -7,6 +7,7 @@ This is a simple console application taking one or more user names and greeting 
 You need to have:
 * JDK 1.8.+
 * Maven 3.2+
+
 To compile the example type:
 ```bash
 $ mvn clean package
