@@ -4,8 +4,8 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>ru.meridor.tools</groupId>
-        <artifactId>plugin-engine-example</artifactId>
+        <groupId>ru.meridor.stecker</groupId>
+        <artifactId>stecker-example</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <artifactId>main</artifactId>
@@ -13,12 +13,12 @@
 
     <dependencies>
         <dependency>
-            <groupId>ru.meridor.tools</groupId>
-            <artifactId>plugin-loader</artifactId>
-            <version>${plugin-engine.version}</version>
+            <groupId>ru.meridor.stecker</groupId>
+            <artifactId>stecker-plugin-loader</artifactId>
+            <version>${stecker.version}</version>
         </dependency>
         <dependency>
-            <groupId>ru.meridor.tools</groupId>
+            <groupId>ru.meridor.stecker</groupId>
             <artifactId>extension-points</artifactId>
         </dependency>
     </dependencies>
@@ -33,7 +33,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>ru.meridor.tools.plugin.Hello</mainClass>
+                            <mainClass>ru.meridor.stecker.Hello</mainClass>
                         </manifest>
                     </archive>
                     <outputDirectory>${project.parent.build.directory}</outputDirectory>

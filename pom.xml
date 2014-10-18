@@ -3,16 +3,16 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>ru.meridor.tools</groupId>
-    <artifactId>plugin-engine-example</artifactId>
+    <groupId>ru.meridor.stecker</groupId>
+    <artifactId>stecker-example</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>plugin-engine-example</name>
+    <name>stecker-example</name>
 
     <properties>
         <compiler.version>1.8</compiler.version>
-        <plugin-engine.version>1.0.0-SNAPSHOT</plugin-engine.version>
+        <stecker.version>1.0.0-SNAPSHOT</stecker.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -44,8 +44,8 @@
         <pluginManagement>
             <plugins>
                 <plugin>
-                    <groupId>ru.meridor.tools</groupId>
-                    <artifactId>plugin-generator</artifactId>
+                    <groupId>ru.meridor.stecker</groupId>
+                    <artifactId>stecker-plugin-generator</artifactId>
                     <version>1.0.0-SNAPSHOT</version>
                     <configuration>
                         <maintainer>Ivan Krutov &lt;vania-pooh@vania-pooh.com&gt;</maintainer>
@@ -66,12 +66,12 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>ru.meridor.tools</groupId>
+                <groupId>ru.meridor.stecker</groupId>
                 <artifactId>main</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>ru.meridor.tools</groupId>
+                <groupId>ru.meridor.stecker</groupId>
                 <artifactId>extension-points</artifactId>
                 <version>${project.version}</version>
             </dependency>

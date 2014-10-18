@@ -1,4 +1,4 @@
-package ru.meridor.tools.plugin;
+package ru.meridor.stecker;
 
 public interface Greeter {
 
