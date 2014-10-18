@@ -4,8 +4,8 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>ru.meridor.tools</groupId>
-        <artifactId>plugin-engine-example</artifactId>
+        <groupId>ru.meridor.stecker</groupId>
+        <artifactId>stecker-example</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <artifactId>extension-points</artifactId>
