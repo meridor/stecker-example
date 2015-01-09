@@ -1,4 +1,4 @@
-package ru.meridor.stecker;
+package org.meridor.stecker;
 
 public class HeyGreeter implements Greeter {
 

@@ -1,7 +1,7 @@
-package ru.meridor.stecker;
+package org.meridor.stecker;
 
-import ru.meridor.stecker.interfaces.Dependency;
-import ru.meridor.stecker.interfaces.DependencyProblem;
+import org.meridor.stecker.interfaces.Dependency;
+import org.meridor.stecker.interfaces.DependencyProblem;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
