@@ -12,7 +12,7 @@
 
     <properties>
         <compiler.version>1.8</compiler.version>
-        <stecker.version>1.0.0-SNAPSHOT</stecker.version>
+        <stecker.version>1.0.0</stecker.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -46,7 +46,7 @@
                 <plugin>
                     <groupId>org.meridor.stecker</groupId>
                     <artifactId>stecker-plugin-generator</artifactId>
-                    <version>1.0.0-SNAPSHOT</version>
+                    <version>${stecker.version}</version>
                     <configuration>
                         <maintainer>Ivan Krutov &lt;vania-pooh@vania-pooh.com&gt;</maintainer>
                         <outputDirectory>${project.parent.build.directory}/plugins</outputDirectory>
